@@ -79,31 +79,30 @@ p span.examDate {
 	<title>Home</title>
 </head>
 <body>
-<div class="divH1">
-	<h1><a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">Test - Fu</a></h1>
-</div>
-<h2>Çıkmış ALES - YDS - TUS soruları artık cebinizde</h2>
-<div class="divLeftPart">
-	<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
-		<span class="examDetail">Yabancı Dil Bilgisi Seviye Tespit Sınavı (İlkbahar Dönemi)</span><br>
-		<span class="examDate">&#10148; ${dtYdsIb } (son ${leftYdsIb} gün)</span>
-	</p>
-	<p class="examHeader"><strong>2015-TUS İlkbahar Dönemi</strong><br>
-		<span class="examDetail">Tıpta Uzmanlık Eğitimi Giriş Sınavı (İlkbahar Dönemi)</strong></span><br>
-		<span class="examDate">&#10148; ${dtTusIb } (son ${leftTusIb} gün)</span>
-	</p>
-	<p class="examHeader"><strong>2015-ALES İlkbahar Dönemi</strong><br>
-		<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
-		<span class="examDate">&#10148; ${dtAlesIb } (son ${leftAlesIb} gün)</span>
-	</p>
-	
-</div>
-<div class="divLeftPart">
-	<div class="divVideo">
-	 	<iframe width="560" height="315" src="//www.youtube.com/embed/PqFFQB64JS8" frameborder="0" allowfullscreen></iframe>
+	<div class="divH1">
+		<h1><a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">Test - Fu</a></h1>
 	</div>
-</div>
-<iframe width="560" height="315" src="//www.youtube.com/embed/PqFFQB64JS8" frameborder="0" allowfullscreen></iframe>
+	<h2>Çıkmış ALES - YDS - TUS soruları artık cebinizde</h2>
+	<div class="divLeftPart">
+		<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
+			<span class="examDetail">Yabancı Dil Bilgisi Seviye Tespit Sınavı (İlkbahar Dönemi)</span><br>
+			<span class="examDate">&#10148; ${dtYdsIb } (son ${leftYdsIb} gün)</span>
+		</p>
+		<p class="examHeader"><strong>2015-TUS İlkbahar Dönemi</strong><br>
+			<span class="examDetail">Tıpta Uzmanlık Eğitimi Giriş Sınavı (İlkbahar Dönemi)</strong></span><br>
+			<span class="examDate">&#10148; ${dtTusIb } (son ${leftTusIb} gün)</span>
+		</p>
+		<p class="examHeader"><strong>2015-ALES İlkbahar Dönemi</strong><br>
+			<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
+			<span class="examDate">&#10148; ${dtAlesIb } (son ${leftAlesIb} gün)</span>
+		</p>
+		
+	</div>
+	<div class="divLeftPart">
+		<div class="divVideo">
+		 	<iframe width="560" height="315" src="//www.youtube.com/embed/PqFFQB64JS8" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
 
 </body>
 </html>
