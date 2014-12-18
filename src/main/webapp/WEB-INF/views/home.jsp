@@ -101,6 +101,9 @@ p span.examDate {
 <div class="divLeftPart">
 	<div class="divVideo">
 	 	<iframe frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/GWwsd5APlgw" width="420"></iframe> 
+	 	 <iframe width="420" height="315"
+src="http://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe> 
 	</div>
 </div>
 
