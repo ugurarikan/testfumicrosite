@@ -25,7 +25,21 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
+		ExamDate alesIb = new ExamDate(10, 5, 2015, 10, 0);
+		ExamDate alesSb = new ExamDate(22, 11, 2015, 10, 0);
+		ExamDate ydsIb = new ExamDate(5, 4, 2015, 10, 0);
+		ExamDate ydsSb = new ExamDate(13, 9, 2015, 10, 0);
+		ExamDate tusIb = new ExamDate(12, 4, 2015, 10, 0);
+		ExamDate tusSb = new ExamDate(20, 9, 2015, 10, 0);
 		
+		model.addAttribute("dtAlesIb", alesIb.getDate() + "  @  " + alesIb.getTime());
+		model.addAttribute("leftAlesIb", alesIb.getDifference());
+		
+		model.addAttribute("dtYdsIb", ydsIb.getDate() + "  @  " + alesIb.getTime());
+		model.addAttribute("leftYdsIb", ydsIb.getDifference());
+		
+		model.addAttribute("dtTusIb", tusIb.getDate() + "  @  " + alesIb.getTime());
+		model.addAttribute("leftTusIb", tusIb.getDifference());		
 		
 		return "home";
 	}
