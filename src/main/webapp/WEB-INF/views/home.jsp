@@ -106,7 +106,7 @@ p span.leftTime {
 		<div class="divH1">
 			<h1>
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-					<img src="resources/images/logo.png" alt="Test Fu" height="50" width="50">
+					<img src="resources/images/Logo_TestFu.png" alt="Test Fu" height="50" width="50">
 				</a>
 			</h1>
 		</div>
@@ -147,7 +147,7 @@ p span.leftTime {
 			</p><br>
 			<p class="examHeader">
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="${pageContext.request.contextPath}/resources/images/GooglePlay.svg" alt="Test Fu" width="200">
+				<img src="resources/images/GooglePlay.svg" alt="Test Fu" width="200">
 				</a>
 			</p>
 		</div>
