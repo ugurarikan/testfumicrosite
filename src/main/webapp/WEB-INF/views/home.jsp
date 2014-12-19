@@ -128,19 +128,17 @@ h2 {
 	float: left;
 }
 .divLeftPart {
-	width: 23%;
+	width: 19%;
 	float: left;
 	padding-left: 2%;
-	text-align: justify;
 }
 .divMidPart {
 	width: 50%;
 	float: left;
 }
 .divRightPart {
-	width: 25%;
+	width: 29%;
 	float: left;
-	text-align: justify;
 }
 .examHeader {
 	padding: 0, 0, 0, 0;
@@ -151,13 +149,13 @@ p span.examDetail {
 	display: inline;
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 50%;
+	font-size: 70%;
 }
 p span.examDate {
 	display: inline;
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 60%;
+	font-size: 80%;
 }
 p span.leftTime {
 	color: #FFFFCC;
@@ -167,9 +165,6 @@ p span.leftTime {
 
 
 <html>
-
-
-
 <head>
 	<title>Home</title>
 </head>
