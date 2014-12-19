@@ -147,7 +147,7 @@ p span.leftTime {
 			</p><br>
 			<p class="examHeader">
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="resources/images/GooglePlay.svg" alt="Test Fu" width="200">
+				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
 				</a>
 			</p>
 		</div>
