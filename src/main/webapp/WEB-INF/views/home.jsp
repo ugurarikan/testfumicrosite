@@ -5,6 +5,7 @@
 
 <style>
 .clock{
+	margin-top: 3%;
 	border-radius: 60px;
 	border: 3px solid #fff;
 	height: 40px;
@@ -14,7 +15,7 @@
 	top: 28%;
 	top: -webkit-calc(50% - 43px);
 	top: calc(50% - 43px);
-	left: 25%;
+	left: 48%;
 }
 .clock:after{
 	content: "";
@@ -128,16 +129,17 @@ h2 {
 	float: left;
 }
 .divLeftPart {
-	width: 19%;
+	width: 23%;
 	float: left;
 	padding-left: 2%;
+	text-align: right;
 }
 .divMidPart {
 	width: 50%;
 	float: left;
 }
 .divRightPart {
-	width: 29%;
+	width: 25%;
 	float: left;
 }
 .examHeader {
@@ -186,24 +188,6 @@ p span.leftTime {
 	<h2>Çıkmış ALES - YDS - TUS soruları artık cebinizde</h2>
 	<div class = "divMain">
 		<div class="divLeftPart">
-			<p class="examHeader"><strong>Test-Fu ile cebinize gelen sınavlar:</strong><br>
-				<span class="examDate">&#10150;&nbsp; 11 YDS sınavı</span><br>
-				<span class="examDate">&#10150;&nbsp; 11 TUS sınavı</span><br>
-				<span class="examDate">&#10150;&nbsp; 11 ALES sınavı</span>
-			</p>
-			<p class="examHeader">
-				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
-				</a>
-			</p>
-		</div>
-		<div class="divMidPart">
-			<div class="divVideo">
-			 	<iframe width="672" height="378" src="//www.youtube.com/embed/qHw8DtOm_tY" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="divRightPart">
-			<div class="clock"></div>
 			<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
 				<span class="examDetail">Yabancı Dil Bilgisi Seviye Tespit Sınavı (İlkbahar Dönemi)</span><br>
 				<span class="examDate">&#10150;&nbsp; ${dtYdsIb } (son <span class="leftTime">${leftYdsIb}</span> gün)</span>
@@ -217,6 +201,26 @@ p span.leftTime {
 				<span class="examDate">&#10150;&nbsp; ${dtAlesIb } (son <span class="leftTime">${leftAlesIb}</span> gün)</span>
 			</p>
 		</div>
+		<div class="divMidPart">
+			<div class="divVideo">
+			 	<iframe width="537" height="302" src="//www.youtube.com/embed/qHw8DtOm_tY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="divRightPart">
+			<p class="examHeader"><strong>Test-Fu ile cebinize gelen sınavlar:</strong><br>
+				<span class="examDate">&#10150;&nbsp; 11 YDS sınavı</span><br>
+				<span class="examDate">&#10150;&nbsp; 11 TUS sınavı</span><br>
+				<span class="examDate">&#10150;&nbsp; 11 ALES sınavı</span>
+			</p>
+			<p class="examHeader">
+				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
+				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
+				</a>
+			</p>
+		</div>
+ 	</div>
+ 	<div class = "divMain">
+ 		<div class="clock"></div>
  	</div>
 </body>
 </html>
