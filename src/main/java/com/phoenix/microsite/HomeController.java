@@ -41,8 +41,8 @@ public class HomeController {
 		model.addAttribute("dtTusIb", tusIb.getDate() + "  @  " + alesIb.getTime());
 		model.addAttribute("leftTusIb", tusIb.getDifference());
 		
-		String src = "data:image/jpeg;charset=utf-8;base64," + Images.logoTestFu;
-		model.addAttribute("src", src);
+		String srcTestFuLogo = "data:image/jpeg;charset=utf-8;base64," + Images.logoTestFu;
+		model.addAttribute("srcTestFuLogo", srcTestFuLogo);
 		
 		return "home";
 	}
