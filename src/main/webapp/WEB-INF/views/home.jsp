@@ -4,89 +4,31 @@
 
 
 <style>
-.container{
-	text-align: center;
-	background-color: #e74c3c;
-	overflow: hidden;
-}
-.box:nth-child(2n-1){
-	background-color: rgba(0,0,0,0.05);
-}
-.box{
-	display: inline-block;
-	height: 200px;
-	width: 33.3%;
-	float:left;
-	position: relative;
-	/*margin:0 -4px -5px -2px;*/
-	transition: all .2s ease;
-}
-.box p{
-	color: #777;
-	font-family:  Lato,"Helvetica Neue" ;
-	font-weight: 300;
-	position: absolute;
-	font-size: 20px;
-	width: 100%;
-	height: 25px;
-	text-align: center;
-	bottom: 0px;
-	margin: 0;
-	top:0px;
-	background-color: #fff;
-	opacity: 0;
-	text-transform: uppercase;
-	transition: all .2s ease;
-}
-
-.box:hover p{
-	bottom:0px;
-	top:175px;
-	opacity: 1;
-	transition: all .2s ease;
-	z-index: 2;
-}
-@media (max-width: 420px){
-	.box{
-		width: 100%;
-	}
-
-	.box:nth-child(4n),.box:nth-child(4n-3){
-		background-color: inherit;
-	}
-
-	.box:nth-child(2n-1){
-		background-color:rgba(0,0,0,0.05);
-	}
-
-}
 .clock{
 	border-radius: 60px;
 	border: 3px solid #fff;
-	height: 80px;
-	width: 80px;
+	height: 40px;
+	width: 40px;
 	position: relative;
 
 	top: 28%;
 	top: -webkit-calc(50% - 43px);
 	top: calc(50% - 43px);
-	left: 35%;
-	left: -webkit-calc(50% - 43px);
-	left: calc(50% - 43px);
+	left: 25%;
 }
 .clock:after{
 	content: "";
 	position: absolute;
 	background-color: #fff;
-	top:2px;
+	top:1px;
 	left: 48%;
-	height: 38px;
-	width: 4px;
+	height: 19px;
+	width: 2px;
 	border-radius: 5px;
 	-webkit-transform-origin: 50% 97%;
 			transform-origin: 50% 97%;
-	-webkit-animation: grdAiguille 2s linear infinite;
-			animation: grdAiguille 2s linear infinite;
+	-webkit-animation: grdAiguille 12s linear infinite;
+			animation: grdAiguille 12s linear infinite;
 }
 
 @-webkit-keyframes grdAiguille{
@@ -103,15 +45,15 @@
 	content: "";
 	position: absolute;
 	background-color: #fff;
-	top:6px;
+	top:3px;
 	left: 48%;
-	height: 35px;
-	width: 4px;
-	border-radius: 5px;
+	height: 17px;
+	width: 2px;
+	border-radius: 2px;
 	-webkit-transform-origin: 50% 94%;
 			transform-origin: 50% 94%;
-	-webkit-animation: ptAiguille 12s linear infinite;
-			animation: ptAiguille 12s linear infinite;
+	-webkit-animation: ptAiguille 72s linear infinite;
+			animation: ptAiguille 72s linear infinite;
 }
 
 @-webkit-keyframes ptAiguille{
@@ -189,6 +131,7 @@ h2 {
 	width: 23%;
 	float: left;
 	padding-left: 2%;
+	text-align: justify;
 }
 .divMidPart {
 	width: 50%;
@@ -197,23 +140,24 @@ h2 {
 .divRightPart {
 	width: 25%;
 	float: left;
+	text-align: justify;
 }
 .examHeader {
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 140%;
+	font-size: 120%;
 }
 p span.examDetail {
 	display: inline;
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 60%;
+	font-size: 50%;
 }
 p span.examDate {
 	display: inline;
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 80%;
+	font-size: 60%;
 }
 p span.leftTime {
 	color: #FFFFCC;
@@ -247,19 +191,16 @@ p span.leftTime {
 	<h2>Çıkmış ALES - YDS - TUS soruları artık cebinizde</h2>
 	<div class = "divMain">
 		<div class="divLeftPart">
-			<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
-				<span class="examDetail">Yabancı Dil Bilgisi Seviye Tespit Sınavı (İlkbahar Dönemi)</span><br>
-				<span class="examDate">&#10148; ${dtYdsIb } (son <span class="leftTime">${leftYdsIb}</span> gün)</span>
+			<p class="examHeader"><strong>Test-Fu ile cebinize gelen sınavlar:</strong><br>
+				<span class="examDate">&#10150;&nbsp; 11 YDS sınavı</span><br>
+				<span class="examDate">&#10150;&nbsp; 11 TUS sınavı</span><br>
+				<span class="examDate">&#10150;&nbsp; 11 ALES sınavı</span>
 			</p>
-			<p class="examHeader"><strong>2015-TUS İlkbahar Dönemi</strong><br>
-				<span class="examDetail">Tıpta Uzmanlık Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
-				<span class="examDate">&#10148; ${dtTusIb } (son <span class="leftTime">${leftTusIb}</span> gün)</span>
+			<p class="examHeader">
+				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
+				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
+				</a>
 			</p>
-			<p class="examHeader"><strong>2015-ALES İlkbahar Dönemi</strong><br>
-				<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
-				<span class="examDate">&#10148; ${dtAlesIb } (son <span class="leftTime">${leftAlesIb}</span> gün)</span>
-			</p>
-			<div class="clock"></div>
 		</div>
 		<div class="divMidPart">
 			<div class="divVideo">
@@ -267,15 +208,18 @@ p span.leftTime {
 			</div>
 		</div>
 		<div class="divRightPart">
-			<p class="examHeader"><strong>Test-Fu ile cebinize gelen sınavlar:</strong><br>
-				<span class="examDate">&#x231b; 11 YDS sınavı</span><br>
-				<span class="examDate">&#10148; 11 TUS sınavı</span><br>
-				<span class="examDate">&#10148; 11 ALES sınavı</span>
-			</p><br>
-			<p class="examHeader">
-				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
-				</a>
+			<div class="clock"></div>
+			<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
+				<span class="examDetail">Yabancı Dil Bilgisi Seviye Tespit Sınavı (İlkbahar Dönemi)</span><br>
+				<span class="examDate">&#10150;&nbsp; ${dtYdsIb } (son <span class="leftTime">${leftYdsIb}</span> gün)</span>
+			</p>
+			<p class="examHeader"><strong>2015-TUS İlkbahar Dönemi</strong><br>
+				<span class="examDetail">Tıpta Uzmanlık Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
+				<span class="examDate">&#10150;&nbsp; ${dtTusIb } (son <span class="leftTime">${leftTusIb}</span> gün)</span>
+			</p>
+			<p class="examHeader"><strong>2015-ALES İlkbahar Dönemi</strong><br>
+				<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
+				<span class="examDate">&#10150;&nbsp; ${dtAlesIb } (son <span class="leftTime">${leftAlesIb}</span> gün)</span>
 			</p>
 		</div>
  	</div>
