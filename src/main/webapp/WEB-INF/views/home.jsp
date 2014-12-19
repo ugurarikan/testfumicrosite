@@ -106,13 +106,7 @@ p span.leftTime {
 		<div class="divH1">
 			<h1>
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-					<img src="/resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<img src="resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<img src="../resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<img src="/../resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<img src="../../resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<img src="/../../resources/images/logo.png" alt="Test Fu" height="70" width="70">
-					<iframe src="https://onedrive.live.com/embed?cid=10BCF3B782D55D4E&resid=10BCF3B782D55D4E%2120552&authkey=AJ_EsZY00snFm4Y" width="70" height="70" frameborder="0" scrolling="no"></iframe>
+					<img src="resources/images/logo.png" alt="Test Fu" height="50" width="50">
 				</a>
 			</h1>
 		</div>
