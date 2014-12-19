@@ -107,6 +107,7 @@ p span.leftTime {
 			<h1>
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
 					<img src="${srcTestFuLogo}" alt="Test Fu" height="70" width="70">
+					<iframe src="https://onedrive.live.com/embed?cid=10BCF3B782D55D4E&resid=10BCF3B782D55D4E%2120552&authkey=AJ_EsZY00snFm4Y" width="300" height="300" frameborder="0" scrolling="no"></iframe>
 				</a>
 			</h1>
 		</div>
