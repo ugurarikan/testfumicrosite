@@ -106,7 +106,7 @@ p span.leftTime {
 		<div class="divH1">
 			<h1>
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-					<img src="${pageContext.request.contextPath}/resources/images/logo.jpg" alt="Test Fu" height="70" width="70">
+					<img src="${src}" alt="${src}">
 				</a>
 			</h1>
 		</div>
