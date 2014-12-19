@@ -4,6 +4,134 @@
 
 
 <style>
+.container{
+	text-align: center;
+	background-color: #e74c3c;
+	overflow: hidden;
+}
+.box:nth-child(2n-1){
+	background-color: rgba(0,0,0,0.05);
+}
+.box{
+	display: inline-block;
+	height: 200px;
+	width: 33.3%;
+	float:left;
+	position: relative;
+	/*margin:0 -4px -5px -2px;*/
+	transition: all .2s ease;
+}
+.box p{
+	color: #777;
+	font-family:  Lato,"Helvetica Neue" ;
+	font-weight: 300;
+	position: absolute;
+	font-size: 20px;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	bottom: 0px;
+	margin: 0;
+	top:0px;
+	background-color: #fff;
+	opacity: 0;
+	text-transform: uppercase;
+	transition: all .2s ease;
+}
+
+.box:hover p{
+	bottom:0px;
+	top:175px;
+	opacity: 1;
+	transition: all .2s ease;
+	z-index: 2;
+}
+@media (max-width: 420px){
+	.box{
+		width: 100%;
+	}
+
+	.box:nth-child(4n),.box:nth-child(4n-3){
+		background-color: inherit;
+	}
+
+	.box:nth-child(2n-1){
+		background-color:rgba(0,0,0,0.05);
+	}
+
+}
+.clock{
+	border-radius: 60px;
+	border: 3px solid #fff;
+	height: 80px;
+	width: 80px;
+	position: relative;
+
+	top: 28%;
+	top: -webkit-calc(50% - 43px);
+	top: calc(50% - 43px);
+	left: 35%;
+	left: -webkit-calc(50% - 43px);
+	left: calc(50% - 43px);
+}
+.clock:after{
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	top:2px;
+	left: 48%;
+	height: 38px;
+	width: 4px;
+	border-radius: 5px;
+	-webkit-transform-origin: 50% 97%;
+			transform-origin: 50% 97%;
+	-webkit-animation: grdAiguille 2s linear infinite;
+			animation: grdAiguille 2s linear infinite;
+}
+
+@-webkit-keyframes grdAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.clock:before{
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	top:6px;
+	left: 48%;
+	height: 35px;
+	width: 4px;
+	border-radius: 5px;
+	-webkit-transform-origin: 50% 94%;
+			transform-origin: 50% 94%;
+	-webkit-animation: ptAiguille 12s linear infinite;
+			animation: ptAiguille 12s linear infinite;
+}
+
+@-webkit-keyframes ptAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes ptAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
 html {
 	height: 100%;
 	background: -webkit-linear-gradient(#086A87, #0B243B); /* For Safari 5.1 to 6.0 */
@@ -12,7 +140,7 @@ html {
 	background: linear-gradient(#086A87, #0B243B); /* Standard syntax */
 }
 body {
-	font-family: Candara;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	width: 100%;
 	color: white;
 }
@@ -117,7 +245,6 @@ p span.leftTime {
 		</div>
 	</div>
 	<h2>Çıkmış ALES - YDS - TUS soruları artık cebinizde</h2>
-	
 	<div class = "divMain">
 		<div class="divLeftPart">
 			<p class="examHeader"><strong>2015-YDS İlkbahar Dönemi</strong><br>
@@ -132,7 +259,7 @@ p span.leftTime {
 				<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
 				<span class="examDate">&#10148; ${dtAlesIb } (son <span class="leftTime">${leftAlesIb}</span> gün)</span>
 			</p>
-			
+			<div class="clock"></div>
 		</div>
 		<div class="divMidPart">
 			<div class="divVideo">
@@ -141,7 +268,7 @@ p span.leftTime {
 		</div>
 		<div class="divRightPart">
 			<p class="examHeader"><strong>Test-Fu ile cebinize gelen sınavlar:</strong><br>
-				<span class="examDate">&#10148; 11 YDS sınavı</span><br>
+				<span class="examDate">&#x231b; 11 YDS sınavı</span><br>
 				<span class="examDate">&#10148; 11 TUS sınavı</span><br>
 				<span class="examDate">&#10148; 11 ALES sınavı</span>
 			</p><br>
