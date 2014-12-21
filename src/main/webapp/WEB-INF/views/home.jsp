@@ -158,6 +158,14 @@ p span.leftTime {
 	color: #FFFFCC;
 	font-weight: bold;
 }
+
+table.social td {
+	height: 35px;
+	padding-right: 5px;
+}
+table.social img {
+	height: 100%;
+} 
 </style>
 
 
@@ -198,7 +206,7 @@ p span.leftTime {
 		</div>
 		<div class="divMidPart">
 			<div class="divVideo">
-			 	<iframe width="80%" height="45%" src="//www.youtube.com/embed/qHw8DtOm_tY" frameborder="0" allowfullscreen></iframe>
+				<iframe width="80%" height="45%" src="//www.youtube.com/embed/ihqXxHyQoMA" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="divRightPart">
@@ -209,14 +217,21 @@ p span.leftTime {
 			</p>
 			<p class="examHeader">
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="60%">
+					<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="60%">
 				</a>
 			</p>
-			<div>
-				<a href="mailto:testfu.tr@gmail.com">
-				<img class="grow" src="resources/images/Icon_Mail.png" alt="testfu.tr@gmail.com" width="15%">
+			<p class="examHeader">
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https://afternoon-dawn-1477.herokuapp.com/" target="_blank">
+					<img class="grow" src="resources/images/Logo_Facebook.png" alt="Share on Facebook" width="8%">
 				</a>
-			</div>
+				<a href="https://twitter.com/share"  data-url="https://afternoon-dawn-1477.herokuapp.com/" data-via="TestFu_Tr" data-count="none">
+					<img class="grow" src="resources/images/Logo_Twitter.png" alt="Tweet" width="8%">
+				</a>
+				<a href="mailto:testfu.tr@gmail.com">
+					<img class="grow" src="resources/images/Icon_Mail.png" alt="Email" width="11.99%">
+				</a>
+			</p>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			<!-- <div class="clock"></div> -->
 		</div>
  	</div>
