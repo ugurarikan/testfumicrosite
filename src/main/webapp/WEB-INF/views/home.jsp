@@ -224,7 +224,7 @@ table.social img {
 				<a href="https://www.facebook.com/sharer/sharer.php?u=https://afternoon-dawn-1477.herokuapp.com/" target="_blank">
 					<img class="grow" src="resources/images/Logo_Facebook.png" alt="Share on Facebook" width="8%">
 				</a>
-				<a href="https://twitter.com/share"  data-url="https://afternoon-dawn-1477.herokuapp.com/" data-via="TestFu_Tr" data-count="none">
+				<a href="https://twitter.com/share"  data-url="https://afternoon-dawn-1477.herokuapp.com/" data-via="TestFu_Tr" data-count="none" target="_blank">
 					<img class="grow" src="resources/images/Logo_Twitter.png" alt="Tweet" width="8%">
 				</a>
 				<a href="mailto:testfu.tr@gmail.com">
