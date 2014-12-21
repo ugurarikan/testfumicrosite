@@ -15,7 +15,7 @@
 	top: 28%;
 	top: -webkit-calc(50% - 43px);
 	top: calc(50% - 43px);
-	left: 48%;
+	left: 35%;
 }
 .clock:after{
 	content: "";
@@ -68,13 +68,6 @@
 }
 
 
-
-
-
-
-
-
-
 html {
 	height: 100%;
 	background: -webkit-linear-gradient(#086A87, #0B243B); /* For Safari 5.1 to 6.0 */
@@ -122,6 +115,7 @@ h2 {
 }
 .divVideo {
 	text-align: center;
+	height: 100%;
 }
 
 .divMain {
@@ -136,6 +130,7 @@ h2 {
 }
 .divMidPart {
 	width: 50%;
+	height: 100%;
 	float: left;
 }
 .divRightPart {
@@ -168,7 +163,7 @@ p span.leftTime {
 
 <html>
 <head>
-	<title>Home</title>
+	<title>Test - Fu</title>
 </head>
 <body>
 	<div class="divHeader">
@@ -203,7 +198,7 @@ p span.leftTime {
 		</div>
 		<div class="divMidPart">
 			<div class="divVideo">
-			 	<iframe width="537" height="302" src="//www.youtube.com/embed/qHw8DtOm_tY" frameborder="0" allowfullscreen></iframe>
+			 	<iframe width="80%" height="45%" src="//www.youtube.com/embed/qHw8DtOm_tY" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="divRightPart">
@@ -214,13 +209,16 @@ p span.leftTime {
 			</p>
 			<p class="examHeader">
 				<a href="https://play.google.com/store/apps/details?id=com.phoenix.testfu.android">
-				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="200">
+				<img src="resources/images/Logo_GooglePlay.svg" alt="Test Fu" width="60%">
 				</a>
 			</p>
+			<div>
+				<a href="mailto:testfu.tr@gmail.com">
+				<img class="grow" src="resources/images/Icon_Mail.png" alt="testfu.tr@gmail.com" width="15%">
+				</a>
+			</div>
+			<!-- <div class="clock"></div> -->
 		</div>
- 	</div>
- 	<div class = "divMain">
- 		<div class="clock"></div>
  	</div>
 </body>
 </html>
