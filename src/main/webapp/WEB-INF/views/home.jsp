@@ -15,7 +15,7 @@
 	top: 28%;
 	top: -webkit-calc(50% - 43px);
 	top: calc(50% - 43px);
-	left: 35%;
+	left: 85%;
 }
 .clock:after{
 	content: "";
@@ -69,7 +69,6 @@
 
 
 html {
-	height: 100%;
 	background: -webkit-linear-gradient(#086A87, #0B243B); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#086A87, #0B243B); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#086A87, #0B243B); /* For Firefox 3.6 to 15 */
@@ -78,6 +77,7 @@ html {
 body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	width: 100%;
+	height: 100%;
 	color: white;
 }
 .divHeader {
@@ -110,7 +110,7 @@ h1 a:hover {
 	color: #FFFFCC;
 }
 h2 {
-	font-size: 130%;
+	font-size: 120%;
 	text-align: center;
 }
 .divVideo {
@@ -140,7 +140,7 @@ h2 {
 .examHeader {
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 120%;
+	font-size: 100%;
 }
 p span.examDetail {
 	display: inline;
@@ -152,7 +152,7 @@ p span.examDate {
 	display: inline;
 	padding: 0, 0, 0, 0;
 	margin: 0, 0, 0, 0;
-	font-size: 80%;
+	font-size: 90%;
 }
 p span.leftTime {
 	color: #FFFFCC;
@@ -203,6 +203,9 @@ table.social img {
 				<span class="examDetail">Akademik Personel ve Lisansüstü Eğitimi Giriş Sınavı (İlkbahar Dönemi)</span><br>
 				<span class="examDate">&#10150;&nbsp; ${dtAlesIb } (son <span class="leftTime">${leftAlesIb}</span> gün)</span>
 			</p>
+			<p class="examHeader">
+				<div class="clock"></div>
+			</p>
 		</div>
 		<div class="divMidPart">
 			<div class="divVideo">
@@ -222,15 +225,20 @@ table.social img {
 			</p>
 			<p class="examHeader">
 				<a href="https://www.facebook.com/sharer/sharer.php?u=https://afternoon-dawn-1477.herokuapp.com/" target="_blank">
-					<img class="grow" src="resources/images/Logo_Facebook.png" alt="Share on Facebook" width="8%">
+					<img class="grow" src="resources/images/Logo_Facebook.png" alt="Facebook ile paylaş" width="10%">
 				</a>
 				<a href="https://twitter.com/share"  data-url="https://afternoon-dawn-1477.herokuapp.com/" data-via="TestFu_Tr" data-count="none" target="_blank">
-					<img class="grow" src="resources/images/Logo_Twitter.png" alt="Tweet" width="8%">
+					<img class="grow" src="resources/images/Logo_Twitter.png" alt="Tweet" width="10%">
+				</a>
+				<a href="https://plus.google.com/share?url=https://afternoon-dawn-1477.herokuapp.com/" onclick="javascript:window.open(this.href,
+ 					'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+  					<img src="resources/images/Logo_GPlus.png" alt="Google+ ile paylaş" width="10%">
 				</a>
 				<a href="mailto:testfu.tr@gmail.com">
-					<img class="grow" src="resources/images/Icon_Mail.png" alt="Email" width="11.99%">
+					<img class="grow" src="resources/images/Image_Email.png" alt="Email" width="10%">
 				</a>
 			</p>
+
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			<!-- <div class="clock"></div> -->
 		</div>
